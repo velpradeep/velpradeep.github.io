@@ -1,0 +1,13 @@
+---
+layout: post
+title: "how to add checkbox in the jqgrid filter search tool bar?"
+date: 2014-05-31
+comments: false
+categories:
+ - Jqgrid search toolbar
+ - checkbox with search in jqgrid
+ - filter search
+---
+
+<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');    ga('create', 'UA-51531085-1', 'velpradeep.blogspot.in');   ga('send', 'pageview');  </script> <div dir="ltr" style="text-align: left;" trbidi="on"><div>There is no option for adding check box in Search toolbar , but we can add a column with values as check box in grid rows</div><div><br />Alternative way :<br /><br />&nbsp;It contains the following options for common searching</div><div><ol><li><span style="color: red;">Search</span></li><li><span style="color: red;">Stype</span></li><li><span style="color: red;">Searchoptions</span></li><li><span style="color: red;">searchrules</span></li></ol><div><b style="background: rgb(255, 255, 255); border: 0px; font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif; font-size: 14px; line-height: 17.804800033569336px; margin: 0px; padding: 0px; vertical-align: baseline;">stype :&nbsp;</b>It determines the search type of the field. (text and select)<br /><br /><b>text: &nbsp;</b>create the text element in search toolbar<br /><br /><b>select:</b> create the select(drop down) element in search toolbar<br /><br />Example:<br /><br />I have a grid with the column name system_defined , I want to show the checkbox in each grid row and search toolbar will be shown as a drop down values with multiselect option.<br /><br /><span style="color: lime;">{name:'system_defined',index:'system_defined', edittype:'checkbox', search: true, formatter: "checkbox", editoptions: { value: "1:Yes;0:No"},editable:true, searchoptions: { sopt: ['eq'], value: ":All;1:Yes;0:No" }, stype: 'select'}</span></div></div></div></div></div>
