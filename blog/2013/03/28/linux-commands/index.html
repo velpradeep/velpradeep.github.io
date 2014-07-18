@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Basic Linux Commands - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; & &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://velpradeep.github.io/blog/2013/03/28/linux-commands">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:velpradeep.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Basic Linux Commands</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-28T00:00:00+05:30" pubdate data-updated="true">Mar 28<sup>th</sup>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><h2 style="text-align: left;"><span style="font-family: Verdana, sans-serif;"><b><span style="font-size: x-small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: red;"><span style="font-size: x-small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span></span></b></span></h2><h2 style="text-align: left;"><b style="font-family: Verdana, sans-serif; font-size: small;">Hi Friends&#8230;&#8230;</b></h2><span style="font-family: Verdana, sans-serif; font-size: x-small;"><b><br /></b></span><span style="font-family: Verdana, sans-serif; font-size: x-small;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Learning Linux commands makes our work much easier. I share some important commands in our routine usage&#8230;&#8230;</b></span><br /><span style="font-family: Verdana, sans-serif; font-size: x-small;"><b><br /></b></span><br /><h3>1. tar command examples :</h3><div>&nbsp;Create a new tar archive.</div><div><br /></div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $ tar cvf archive_name.tar dirname/</div><div><br /></div><div>Extract from an existing tar archive.</div><div><br /></div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $ tar xvf archive_name.tar</div><div><br /></div><div><h3>2. grep command examples :</h3></div><div>&nbsp;Search for a given string in a file (case in-sensitive search).</div><div><br /></div><div>&nbsp; &nbsp; &nbsp; $ grep -i &#8220;the&#8221; demo_file<br /><br /><br /><h3>3. shutdown command examples :</h3><div>&nbsp; &nbsp;Shutdown the system and turn the power off immediately.</div><div><br /></div></div><div>&nbsp; # shutdown -h now<br /><br />Shutdown the system after 10 minutes<br />&nbsp; <br />&nbsp; # shutdown -h +10<br /><br />Reboot the system using shutdown command.<br /><br />&nbsp; &nbsp; # shutdown -r now<br /><br />Force the filesystem check during reboot.<br /><br />&nbsp; # shutdown -Fr now<br /><br /><h3>4. ps command examples</h3><div>ps command is used to display information about the processes that are running in the system.<br /><br />While there are lot of arguments that could be passed to a ps command, following are some of the common ones.<br /><br />To view current running processes.<br /><br /><pre><b>$ ps -ef | more</b><br /></pre><pre><b><br /></b></pre>To view current running processes in a tree structure. H option stands for process hierarchy.<br /><pre><b>$ ps -efH | more</b><br /></pre></div><div><br /></div></div><div><h3>5. top command examples</h3>top command displays the top processes in the system ( by default  sorted by cpu usage ). To sort top output by any column, Press O  (upper-case O) , which will display all the possible columns that you  can sort by as shown below.<br /><br /><br />To displays only the processes that belong to a particular user use  -u option. The following will show only the top processes that belongs  to oracle user.<br /><pre></pre><pre><b>  $ top -u oracle</b><br /></pre><pre><b><br /></b></pre><pre><b><br /></b></pre><br /><br /></div><div><br /></div><br /><span style="font-family: Verdana, sans-serif; font-size: x-small;"><b><br /></b></span><span style="font-family: Verdana, sans-serif; font-size: x-small;"><b><br /></b></span></div></div>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-28T00:00:00+05:30" pubdate data-updated="true">Mar 28<sup>th</sup>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux-commands/'>linux commands</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://velpradeep.github.io/blog/2013/03/28/linux-commands/" data-via="" data-counturl="http://velpradeep.github.io/blog/2013/03/28/linux-commands/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/06/03/basic-rspec-test-coverage/" title="Next Post: Basic Rspec Test Coverage in Rails">Basic Rspec Test Coverage in Rails &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/05/31/how-to-add-checkbox-in-jqgrid-filter/">How to Add Checkbox in the Jqgrid Filter Search Tool Bar?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/24/caching-in-rails/">Caching in Rails</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/22/web-hosting-services/">Heroku Deployment With Rails</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/03/rspec-setup-in-rails-application/">TDD (Rspec) Setup in Rails Application</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/03/basic-rspec-test-coverage/">Basic Rspec Test Coverage in Rails</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
