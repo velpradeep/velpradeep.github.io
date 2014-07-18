@@ -1,97 +1,91 @@
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>TDD (Rspec) Setup in Rails Application - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+<!DOCTYPE HTML>
 
-  
-  <meta name="description" content="How to set-up TDD environment :Test Driven Development :Test Driven Development is a programming practice that instructs &#8220;Developers to write &hellip;">
-  
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>TDD (Rspec) Setup in Rails Application - My Tech Blog...</title>
+	<meta name="author" content="Vel Pradeep">
+
+	
+	<meta name="description" content="TDD (Rspec) Setup in Rails Application How to set-up TDD environment :Test Driven Development :Test Driven Development is a programming practice &hellip;">
+	
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
-  <link rel="canonical" href="http://velpradeep.github.io/blog/2013/06/03/rspec-setup-in-rails-application">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
+	<link href="/atom.xml" rel="alternate" title="My Tech Blog..." type="application/atom+xml">
+	
+	<link rel="canonical" href="http://velpradeep.github.io/blog/2013/06/03/rspec-setup-in-rails-application/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
   
 
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
-  
-    <h2>A blogging framework for hackers.</h2>
-  
-</hgroup>
 
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:velpradeep.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+	
+</div>
 
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="http://about.me/shashankmehta">About</a></li>
+    <li><a href="/blog/archives">Archives</a></li>
+</ul>
 </nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
-    
-      <h1 class="entry-title">TDD (Rspec) Setup in Rails Application</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-03T00:00:00+05:30" pubdate data-updated="true">Jun 3<sup>rd</sup>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><div class='post'>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">TDD (Rspec) Setup in Rails Application</h1>
+	<div class="entry-content" itemprop="articleBody"><div class='post'>
 <div dir="ltr" style="text-align: left;" trbidi="on"><script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');    ga('create', 'UA-51531085-1', 'velpradeep.blogspot.in');   ga('send', 'pageview');  </script> <div dir="ltr" style="text-align: left;" trbidi="on"><br /><b><span style="color: red;">How to set-up TDD environment :</span></b><br /><b><br /></b><b>Test Driven Development :</b><br /><b><br /></b>Test Driven Development is a programming practice that instructs &#8220;Developers to write new code only If the automated test cases failed and to eliminate duplication?<br /><br />For every bit of functionality, you first develop a test that specifies and validates what the code will do&#8221;<br /><br /><b>Goal :</b><br /><b><br /></b>Clean code that works<br /><br /><u><b>How to do Rspec in rails application:</b></u><br /><br /><b>1) Create a Rails Project :</b><br /><b><br /></b>Create a rails project and go inside the project directory<br />a) rails new test_app -d mysql<br />b) cd test_app<br /><br /><b>2) Configure Your Test Database for Test Driven Development</b><br /><b><br /></b>In config/database.yml :<br />test:<br />adapter: mysql2<br />encoding: utf8<br />reconnect: false<br />database: msp_test_app<br />pool: 5<br />username: cyncable<br />password: cyncable<br />host: localhost<br /><br /><b>3) In Gem file :</b><br /><b><br /></b>- gem &#8220;rspec&#8221;<br />- gem &#8220;rspec-rails&#8221;<br />Add the following gems for Rspec environment<br /><br /><b>4) Install gems :</b><br /><b><br /></b>Run the following command to install gems in your application directory<br />- bundle install<br /><br /><b>5) Bootstrap Rspec :</b><br />Run the following command to Initialize the?spec/?directory (where specs will reside) with:<br />- rails generate rsepc:install<br />Example :<br />kpradeep@pradeepk:~/projects//test_app$ rails g rsepc:install<br />exists lib/tasks<br />create lib/tasks/rspec.rake<br />create script/autospec<br />create script/spec<br />create script/spec_server<br />create spec<br />create spec/rcov.opts<br />create spec/spec.opts<br /><br /><br /><br /><b>6) Generate Model, Test, and Migration with rspec_model</b><br /><b><br /></b><b>6.1) create new model</b><br />kpradeep@pradeepk:~/projects/test_app$ rails g model ProfileInformation<br /><br /><i>invoke active_record</i><br /><i>create db/migrate/20130508124121_create_profile_informations.rb</i><br /><i>create app/models/profile_information.rb</i><br /><i>invoke test_unit</i><br /><i>create</i><br /><i>test/unit/profile_information_test.rb</i><br /><i>create</i><br /><i>test/fixtures/profile_informations.yml</i><br /><b>6.2)* create new Rspec model*</b><br />To generate the Rspec model for newly created model.Run the following command, it will create new file under spec/models<br /><b>- rails g rspec:model model_name</b><br /><br /><b><u>Example :</u></b><br />kpradeep@pradeepk:~/projects/test_app$ rails g rspec:model ProfileInformation<br />create spec/models/profile_information_spec.rb<br /><br /><b><u>7) create new Controller :</u></b><br /><b><u><br /></u></b>kpradeep@pradeepk:~/projects/test_app$ rails g controller ProfileInformations<br />create app/controllers/profile_informations_controller.rb<br />invoke erb<br />create app/views/profile_informations<br />invoke test_unit<br />create test/functional/profile_informations_controller_test.rb<br />invoke helper<br />create app/helpers/profile_informations_helper.rb<br />invoke test_unit<br />create<br />test/unit/helpers/profile_informations_helper_test.rb<br />invoke assets<br />invoke coffee<br />create<br />app/assets/javascripts/profile_informations.js.coffee<br />invoke scss<br />create<br />app/assets/stylesheets/profile_informations.css.scss<br /><br /><b>7.1) Generate Rspec controller</b><br /><b><br /></b>Run the following command, it will create new file under spec/controller<br />- rails g rspec:controller controller_name<br />Example :<br />kpradeep@pradeepk:~/projects/test_app$ rails g rspec:model ProfileInformation<br />create spec/controllers/profile_informations_controller_spec.rb<br /><br /><b>8) Migrate the DB</b><br /><b><br /></b>kpradeep@pradeepk:~/projects/test_app$ rake db:migrate<br /><br /><b>9) Prepare the Test database</b><br /><b><br /></b>kpradeep@pradeepk:~/projects/test_app$rake db:test:prepare<br /><br /><b>10) Run Rspec</b><br />kpradeep@pradeepk:~/projects/test_app$ <b>rspec spec</b><br /><b><br /></b>it runs the all specs available under specs folder.If u want to run rspec for specific areas like controllers or models can use the<br />following commands<br /><b><br /></b><br /><b>Example :</b><br />Run the rspec test cases under Controllers folders<br />- rspec spec/controllers<br />Run the specific controller test cases<br />- rsepc spec/controllers/profile_informations_controller_spec.rb<br />Run the rspec test cases under Model folders<br />- rspec spec/models<br />Run the specific model test cases<br />- rsepc spec/models/profile_information_spec.rb<br /><br /><br /><br /><br /></div></div></div>
 <h2>Comments</h2>
 <div class='comments'>
@@ -108,106 +102,32 @@ Great buddy. Good to see your blogs. Keep posting. :)</div>
 </div>
 </div>
 
-
-  <footer>
-    <p class="meta">
-      
-  
-
-<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-03T00:00:00+05:30" pubdate data-updated="true">Jun 3<sup>rd</sup>, 2013</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/rspec-setup-in-rails-application/'>rspec setup in rails application</a>, <a class='category' href='/blog/categories/test-coverage-rails/'>test coverage rails</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://velpradeep.github.io/blog/2013/06/03/rspec-setup-in-rails-application/" data-via="" data-counturl="http://velpradeep.github.io/blog/2013/06/03/rspec-setup-in-rails-application/" >Tweet</a>
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2013/06/03/basic-rspec-test-coverage/" title="Previous Post: Basic Rspec Test Coverage in Rails">&laquo; Basic Rspec Test Coverage in Rails</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2014/04/22/web-hosting-services/" title="Next Post: Heroku Deployment with Rails">Heroku Deployment with Rails &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
 </div>
 
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2014/05/31/how-to-add-checkbox-in-jqgrid-filter/">How to Add Checkbox in the Jqgrid Filter Search Tool Bar?</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/24/caching-in-rails/">Caching in Rails</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/22/web-hosting-services/">Heroku Deployment With Rails</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/06/03/rspec-setup-in-rails-application/">TDD (Rspec) Setup in Rails Application</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/06/03/basic-rspec-test-coverage/">Basic Rspec Test Coverage in Rails</a>
-      </li>
-    
-  </ul>
-</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+
+    Vel Pradeep
 
 
-
-
-
-  
-</aside>
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Your Name -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
 
 
 
@@ -224,7 +144,6 @@ Great buddy. Good to see your blogs. Keep posting. :)</div>
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>
-
 
 
 

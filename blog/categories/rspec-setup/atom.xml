@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Rspec Setup | My Octopress Blog]]></title>
+  <title><![CDATA[Category: rspec setup | My Tech Blog...]]></title>
   <link href="http://velpradeep.github.io/blog/categories/rspec-setup/atom.xml" rel="self"/>
   <link href="http://velpradeep.github.io/"/>
-  <updated>2014-07-18T11:24:02+05:30</updated>
+  <updated>2014-07-18T12:53:57+05:30</updated>
   <id>http://velpradeep.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Vel Pradeep]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
